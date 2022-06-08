@@ -1,4 +1,7 @@
 def euclid_gcd(n1, n2):
+    if not (isinstance(n1, int) and isinstance(n2, int)):
+        raise TypeError("Arguments must be ints")
+
     if n1 > n2:
         a, b = n1, n2
     else:
